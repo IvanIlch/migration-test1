@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'migration-test1'`, () => {
+  it(`should have as title 'my-angular14-app'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('migration-test1');
+    expect(app.title).toEqual('my-angular14-app');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('migration-test1 app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('my-angular14-app app is running!');
   });
 });
